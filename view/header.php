@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-    <link rel="stylesheet" href="../css/header_footer.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
         <div class="bottom">
             <i class="fa-brands fa-facebook-f fa-lg fa-fade" style="color: blue"></i>
             <i class="fa-brands fa-instagram fa-lg fa-fade" style="color: purple;"></i>
-            <i class="fa-brands fa-tiktok fa-lg fa-fade" style="color: brown;"></i>
+            <i class="fa-brands fa-tiktok fa-lg fa-fade" style="color: black;"></i>
             <i class="fa-brands fa-youtube fa-lg fa-fade" style="color: red;"></i>
         </div>
         
