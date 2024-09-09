@@ -1,0 +1,63 @@
+/* Banner Styles */
+.banner {
+    
+    width: 100vw;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner img {
+    display: inline-block;
+    width: 60%;
+    height: 20vw;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.banner-content {
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-content h1 {
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
