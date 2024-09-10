@@ -14,14 +14,24 @@
 <br>
 <br>
 <br>
+<br>
+
 
 <body>
-    <?php include("view/banner.php") ?>
+    <?php 
+        include("view/banner.php") 
+    ?>
     
 </body>
 </html>
 
-
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
 <br>
 <?php
     include("view/footer.php")
