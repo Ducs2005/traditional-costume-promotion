@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/main.css">
 <div class="banner">
    
-    <img src="img/banner1.jpg" alt="Sample Banner Image">
+    <img src="img/banner/banner1.jpg" alt="Sample Banner Image">
     <div class="banner-content">
         <h1>Your Banner Title</h1>
         <p>
