@@ -24,7 +24,7 @@
 
 <br>
 <?php
-    //include("view/footer.php")
+    include("view/footer.php")
 ?>
 
 

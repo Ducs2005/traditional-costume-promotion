@@ -1,7 +1,7 @@
-header {
+body header {
     position: relative;
     line-height: 1;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
 h1 {   
     font-family: "Hurricane";
     font-size: 60px;
-    color: yellow;
+    color: rgb(226, 226, 33);
     font-weight: 600;
     font-style: normal;
     height: 50px;
