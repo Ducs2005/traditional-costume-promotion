@@ -14,7 +14,7 @@
 </head>
 <body>
     <footer>
-        <div class="left">
+        <div class="left_footer">
             <img src="img/logo.png" alt="logo_right" class="logo_right">
             <h2>Cổ phục Việt</h2>
             <h2 id="ON">O&N</h2>
@@ -54,11 +54,11 @@
             </div>
         </div>
 
-        <div class=container_img>
+        <div class=container_img_footer>
             <img src="img/logo.png" alt="logo_left">
         </div>
 
-        <hr color="yellow">
+        <hr color="yellow" id="hr_footer">
         <p align="center" valign="middle">
             &copy;<?php echo date("Y"); ?>CoPhucViet | DucNguyenPhuong
         </p>
