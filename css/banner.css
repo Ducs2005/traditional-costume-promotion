@@ -9,7 +9,7 @@
 
 .banner img {
     width: 90%;
-    height: 20vw;
+    height: auto;
     object-fit: cover;
     opacity: 0.9;
  
@@ -19,18 +19,21 @@
     /*  */
 .banner-content {
     position: absolute;
-    bottom: 20px; /* Positioning it at the bottom */
-    left: 50%; /* Centering horizontally */
-    transform: translateX(-50%); /* Translate horizontally to center */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
     opacity: 0; /* Hidden by default */
-    transition: opacity 0.4s ease; /* Smooth fade-in effect */
+    transition: opacity 0.4s ease;
     text-align: center;
-    z-index: 1; /* Ensures the content is above the image */
+    z-index: 1;
+    max-height: 150px; /* Set a maximum height for the content */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
+
 
 .banner-content h1 {
     font-size: 2rem; /* Adjust to fit at the bottom */
@@ -67,17 +70,37 @@
     }
 
     .banner-content h1 {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
 
     .banner-content p {
-        font-size: 1rem;
+        font-size: clamp(1rem, 3vw, 1.5 rem); /* Adjusts responsively */
     }
 
     .banner img {
         width: 70%;
         height: auto;
     }
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+.banner-content::-webkit-scrollbar {
+    width: 6px; /* Smaller width for a sleeker design */
+}
+
+.banner-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent thumb */
+    border-radius: 10px; /* Rounded scrollbar for a smoother look */
+}
+
+.banner-content::-webkit-scrollbar-track {
+    background-color: transparent; /* No background color for the track */
+}
+
+/* For Firefox (using the ::scrollbar pseudo-element) */
+.banner-content {
+    scrollbar-width: thin; /* Use the thinner default scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Custom colors */
 }
 
 /* Dot Navigation Styles */

@@ -1,14 +1,38 @@
-let bannerIndex = 0;
+let bannerIndex = 0; // Start at the first banner
 const banners = [
     'img/banner/banner1.jpg',
     'img/banner/banner2.jpg',
     'img/banner/banner3.jpg'
 ];
 
+const bannerTexts = [
+    {
+        title: 'Ao Dai - A Symbol of Vietnamese Culture',
+        description: 'The Ao Dai is a traditional Vietnamese garment known for its elegance and graceful silhouette, typically worn on formal occasions and national celebrations.',
+    },
+    {
+        title: 'Elegance in Modern Ao Dai',
+        description: 'Modern Ao Dai blends tradition with contemporary styles, showcasing the beauty of Vietnamese culture through vibrant colors and innovative designs.',
+    },
+    {
+        title: 'Ao Dai - Timeless Beauty',
+        description: 'The timeless beauty of Ao Dai has remained a symbol of Vietnamese culture, evolving with modern fashion while retaining its classic charm.',
+    }
+];
+
 function changeBanner() {
     bannerIndex = (bannerIndex + 1) % banners.length;
     document.querySelector('.banner img').src = banners[bannerIndex];
-    updateDots();
+    updateBannerText(); // Update text when banner changes
+    updateDots(); // Update dot indicator
+}
+
+function updateBannerText() {
+    const titleElement = document.querySelector('.banner-content h1');
+    const descriptionElement = document.querySelector('.banner-content p');
+    
+    titleElement.textContent = bannerTexts[bannerIndex].title;
+    descriptionElement.textContent = bannerTexts[bannerIndex].description;
 }
 
 function updateDots() {
@@ -21,7 +45,8 @@ function updateDots() {
 function goToBanner(index) {
     bannerIndex = index;
     document.querySelector('.banner img').src = banners[bannerIndex];
-    updateDots();
+    updateBannerText(); // Update text for the clicked dot
+    updateDots(); // Update dot indicator
 }
 
 // Set up dot click events
@@ -29,7 +54,8 @@ document.querySelectorAll('.dot').forEach((dot, index) => {
     dot.addEventListener('click', () => goToBanner(index));
 });
 
-setInterval(changeBanner, 5000); // Change every 5 seconds
+// Automatically change banner every 5 seconds
+setInterval(changeBanner, 5000);
 
-updateDots();
-
+updateDots(); // Initialize dot indicator
+updateBannerText();

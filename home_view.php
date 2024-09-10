@@ -6,33 +6,22 @@
     <title>Home view</title>
 
     <!-- Include CSS file -->
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <?php
     include("view/header.php")
 ?>
-<br>
-<br>
-<br>
-<br>
-
-
 <body>
+    <br> <br> <br> <br>
     <?php 
         include("view/banner.php") 
     ?>
-    
 </body>
+
+
 </html>
 
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br>
+
 <?php
     include("view/footer.php")
 ?>
