@@ -6,7 +6,7 @@
     <title>Home view</title>
 
     <!-- Include CSS file -->
-    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <?php
     include("view/header.php")
