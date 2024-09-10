@@ -18,7 +18,7 @@
 
         <h1 align="center" valign="middle">Cổ phục Việt</h1>
 
-        <div class="left">       
+        <div class="left_header">       
             <h4 id="home">HOME</h4>
             <h4 id="clothing">ANCIENT CLOTHING</h4>
             <h4 id="about">ABOUT US</h4>
@@ -31,7 +31,7 @@
 
         <i class="fa-duotone fa-solid fa-bars fa-xl" style="color: #f8fc03;" id="menu"></i>
 
-        <div class=container_img>
+        <div class=container_img_header>
             <img src="img/logo.png" alt="logo">
         </div>
         <hr color="yellow">
@@ -44,7 +44,7 @@
             <i class="fa-brands fa-youtube fa-lg fa-fade" style="color: red;"></i>
         </div>
         
-        <h5>(+84) 123456789</h5> 
+        <h5 id="h5_header">(+84) 123456789</h5> 
     </header> 
 </body>
 </html>
