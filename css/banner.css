@@ -5,6 +5,7 @@
     overflow: hidden;
     text-align: center;
     display: inline-block;
+
 }
 
 .banner img {
@@ -12,7 +13,7 @@
     height: auto;
     object-fit: cover;
     opacity: 0.9;
- 
+    border-radius: 10px;
 }
 
     /* Initially hide the content */

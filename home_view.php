@@ -12,10 +12,16 @@
     include("view/header.php")
 ?>
 <body>
-    <br> <br> <br> <br>
+    <br> <br> <br> <br> 
     <?php 
         include("view/banner.php") 
     ?>
+    <br> <br> <br>
+    <?php
+        include("view/product_list.php")
+    ?>
+
+    <br> <br> <br>
 </body>
 
 
