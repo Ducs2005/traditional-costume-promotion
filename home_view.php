@@ -9,14 +9,6 @@
     <!-- Include CSS file -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<<<<<<< HEAD
-
-<?php
-    require("view/header.php");
-?>
-
-=======
->>>>>>> 2b5aa64334c0883ceb785d324d18a86f9038788d
 <body>
 
 <?php
