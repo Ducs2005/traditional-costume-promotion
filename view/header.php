@@ -13,27 +13,30 @@
 
 <body>
     <header>
-        <hr color="black" id="hr1">
-        <hr color="yellow">
+        <!-- <h1 align="center" valign="middle">Cổ phục Việt</h1> -->
+        <div class="header">
 
-        <h1 align="center" valign="middle">Cổ phục Việt</h1>
+            <hr color="black" id="hr1">
+            <hr color="yellow">
 
-        <div class="left_header">       
-            <h4 id="home">HOME</h4>
-            <h4 id="clothing">ANCIENT CLOTHING</h4>
-            <h4 id="about">ABOUT US</h4>
+            <div class="left_header">       
+                <h4 id="home">HOME</h4>
+                <h4 id="clothing">ANCIENT CLOTHING</h4>
+                <h4 id="about">ABOUT US</h4>
+            </div>
+
+            <div class="right">       
+                <h4 id="register">SIGN IN/REGISTER</h4>
+                <h4 id="contact">CONTACT</h4>
+            </div>
+
+            <div class=container_img_header align="center" valign="middle">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <i class="fa-duotone fa-solid fa-bars fa-xl" id="menu"></i>
         </div>
-
-        <div class="right">       
-            <h4 id="register">SIGN IN/REGISTER</h4>
-            <h4 id="contact">CONTACT</h4>
-        </div>
-
-        <i class="fa-duotone fa-solid fa-bars fa-xl" style="color: #f8fc03;" id="menu"></i>
-
-        <div class=container_img_header>
-            <img src="img/logo.png" alt="logo">
-        </div>
+        
         <hr color="yellow">
         <hr color="black"  id="hr1">
 
@@ -42,9 +45,8 @@
             <i class="fa-brands fa-instagram fa-lg fa-fade" style="color: purple;"></i>
             <i class="fa-brands fa-tiktok fa-lg fa-fade" style="color: black;"></i>
             <i class="fa-brands fa-youtube fa-lg fa-fade" style="color: red;"></i>
-        </div>
-        
-        <h5 id="h5_header">(+84) 123456789</h5> 
+            <i  class="h5_header"><h5>(+84) 123456789</h5></i> 
+        </div>       
     </header> 
 </body>
 </html>

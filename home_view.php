@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +9,11 @@
     <!-- Include CSS file -->
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <?php
-    include("view/header.php")
+    require("view/header.php");
 ?>
+
 <body>
     <br> <br> <br> <br>
     <?php 
