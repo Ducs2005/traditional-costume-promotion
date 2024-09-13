@@ -13,7 +13,7 @@
     <footer>
         <div class="row">
             <div class="col">
-                <img src="img/logo.png" class="logo">
+                <img src="img/logo.png" class="logo1">
                 <p>Anh trai say Hi Kim phut kim gio Chan thanh</p>
                 <p>Duong Domic Yeu em 2 ngay - Weantodale Badbye</p>
                 <p>Oh Hae Young</p>
