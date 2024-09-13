@@ -1,3 +1,7 @@
-body {
-    background-color: rgb(117, 113, 111);
+html, body {
+    background-color: rgb(185, 108, 108);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    flex-direction: column;
 }

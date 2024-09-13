@@ -17,8 +17,4 @@
     </div>
     
 </div>
-
-    
-
-
 <script src="js/banner.js"></script>
