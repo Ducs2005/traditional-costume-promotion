@@ -11,12 +11,41 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         <div class="logo1"><img src="img/logo.png" alt=""></div>
         <div class="search-box">
             <form class="search">
                 <input type="text" name="search" id="srch" placeholder="Search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
+=======
+        <!-- <h1 align="center" valign="middle">Cổ phục Việt</h1> -->
+        <div class="header">
+
+            <hr color="black" id="hr1">
+            <hr color="yellow">
+
+            <div class="left_header">       
+                <h4 id="home">HOME</h4>
+                <h4 id="clothing">ANCIENT CLOTHING</h4>
+                <h4 id="about">ABOUT US</h4>
+            </div>
+
+            <div class="right">       
+                <h4 id="register">SIGN IN/REGISTER</h4>
+                <h4 id="contact">CONTACT</h4>
+            </div>
+
+            <div class=container_img_header align="center" valign="middle">
+<<<<<<< HEAD
+                <img src="img/logo.png" alt="logo">
+=======
+                <img src="../img/logo.png" alt="logo">
+>>>>>>> 3cbb4872147a55f16a16f6d84f814c480d544656
+            </div>
+
+            <i class="fa-duotone fa-solid fa-bars fa-xl" id="menu"></i>
+>>>>>>> 1a7827a24a7dfc0ed58ee22f6db754371cd0f2eb
         </div>
         <ul>
             <li><a href="#">Home</a></li>
