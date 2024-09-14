@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" name="" id="chk1">
         <div class="logo"><img src="img/logo.png"></div>
         <div class="search-box">
             <form action="">
@@ -32,7 +33,7 @@
             </li>
         </ul>
         <div class="menu">
-            <label for="mn">
+            <label for="chk1">
                 <i class="fa fa-bars"></i>
             </label>
         </div>
