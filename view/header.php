@@ -22,9 +22,9 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Acient Clothing</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="account/login_register.php">Log in</a></li>
+            <li><a href="#">About us</a></li>         
             <li><a href="#">Contact</a></li>
+            <li><a href="account/login_register.php">Log in</a></li>
             <li>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-tiktok"></i></a>

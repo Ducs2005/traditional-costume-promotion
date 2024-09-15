@@ -13,7 +13,7 @@
     <div class="wrapper"> 
 
         <span class="icon-close">
-            <a href="../home_view.php"><i class="fa-solid fa-xmark" style="color: #fff"></i></a>
+            <a href="../home.php"><i class="fa-solid fa-xmark" style="color: #fff"></i></a>
         </span> 
 
         <!-- login -->
