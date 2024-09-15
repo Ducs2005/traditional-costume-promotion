@@ -69,7 +69,6 @@
                     <p>Đối khâm tức vạt áo đối nhau, đối khâm là dạng áo có hai vạt trước đặt song song nhau, thường để buông thõng, khoác bên ngoài, nhìn được rõ lớp áo bên trong. Loại áo này thường xẻ tà 2 bên, độ dài chưa chạm đến chân váy. Từ thời Lý – Trần nước ta đã chuộng lại áo này.</p>
                     <a href="product3-details.html" class="btn">Xem Chi Tiết</a>
                 </div>
-                <!-- Thêm các sản phẩm khác ở đây -->
             </div>
         </div>
     </section>
