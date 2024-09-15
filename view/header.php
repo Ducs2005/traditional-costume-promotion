@@ -20,11 +20,19 @@
             </form>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Acient Clothing</a></li>
-            <li><a href="#">About us</a></li>         
-            <li><a href="#">Contact</a></li>
-            <li><a href="account/login_register.php">Log in</a></li>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="product_description.php">Cổ phục</a>
+                <ul class="sub-menu">
+                    <li><a href="">Áo giao lĩnh</a></li>
+                    <li><a href="">Áo viên lĩnh</a></li>
+                    <li><a href="">Áo đối khâm</a></li>
+                </ul>
+        
+        
+            </li>
+            <li><a href="#">Về chúng tôi</a></li>         
+            <li><a href="#">Liên lạc</a></li>
+            <li><a href="account/login_register.php">Đăng nhập</a></li>
             <li>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-tiktok"></i></a>
