@@ -60,7 +60,7 @@
                 Giao lĩnh vạt ngắn dài không quá thân trên, thường dùng cho phụ nữ. Tại Việt Nam thời Lê, giao lĩnh vạt ngắn có thường quây bên ngoài, tương tự các thời kỳ trước của Trung Quốc, có nét tương đồng với giao lĩnh quây hakama của Nhật.
 Tuy nhiên giao lĩnh vạt ngắn quây thường triều Lê có thể phân biệt với giao lĩnh vạt ngắn quây thường của các triều đại ở Trung Quốc ở chỗ chiếc thường bên ngoài ngắn hơn chiếc thường (hoặc váy) bên trong, để lộ hai lớp váy. Trong khi đó, ở Trung Quốc (cũng như Nhật Bản và Triều Tiên), chiếc thường bên ngoài dài đến sát đất, che kín chiếc thường (hoặc váy) bên trong.
                 </p>
-                <a href="giaolinhvatngan.php" class="flip">Trang sau</a>
+                <a href="giaolinh.php" class="flip">Trang sau</a>
             </div>
         </div>
     </section>
