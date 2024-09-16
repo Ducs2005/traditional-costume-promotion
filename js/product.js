@@ -1,4 +1,4 @@
-// js/products.js
+// js/product.js
 
 // Array to store product data
 const products = [
