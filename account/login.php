@@ -44,13 +44,11 @@
             $result = $stmt->get_result();
             if ($result->num_rows == 1) {
                 $row = $result->fetch_assoc();      
-                if (isset($row['password'])) { // Kiểm tra xem khóa 'password' có tồn tại không
+                if (isset($row['password'])) {
                     $stored_pwd = $row['password'];
                     if (password_verify($password, $stored_pwd)) {
                         $_SESSION['name'] = $row['name'];
                         header("location:../home.php");
-                    } else {
-                        $err_msg = "Incorrect password";
                     }
                 } else {
                     $err_msg = "Incorrect password.";
@@ -136,4 +134,6 @@
 <script src="../js/login_register.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
