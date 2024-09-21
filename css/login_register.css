@@ -16,7 +16,7 @@ body {
     background-position: center;
 }
 
-.wrapper {
+.wrapper .form-box.login{
     position: relative;
     width: 600px;
     height: 600px;
@@ -36,6 +36,23 @@ body {
 
 .wrapper.active {
     height: 680px;
+}
+
+.wrapper .form-box.register {
+    position: relative;
+    width: 550px;
+    height: 700px;
+    display: flex;  
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper .form-box {
@@ -68,21 +85,21 @@ body {
     z-index: 1;
 }
 
-.wrapper .form-box.login {
+/* .wrapper .form-box.login {
     transition: transform .60s ease;
     transform: translateX(0);
-}
+} */
 
-.wrapper.active .form-box.login {
+/* .wrapper.active .form-box.login {
     transition: none;
     transform: translateX(-570px);
-}
+} */
 
-.wrapper .form-box.register {
+/* .wrapper .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(570px);
-}
+} */
 
 .wrapper.active .form-box.register {
     transition: transform .60s ease;
@@ -150,7 +167,7 @@ body {
     text-decoration: underline;
 }
 
-.wrapper .btn {
+.wrapper button {
     font-family: Holtwood One SC;
     font-weight: initial;
     font-size: 15px;
@@ -287,4 +304,8 @@ body {
 
 .loginLink p a:hover {
     text-decoration: underline;
+}
+
+.form-box.register .text-danger {
+    color: antiquewhite;
 }

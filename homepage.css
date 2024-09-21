@@ -6,9 +6,27 @@
 .banner {
     width: 100%;
     height: 100vh;
-    text-align: center;
+    text-align: right;
     overflow: hidden;
     position: relative;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
 }
 
 .banner .slider {
@@ -43,4 +61,63 @@
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 0 8px #000;
+}
+
+/* .hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+} */
+
+.hero-section {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+}
+
+.hero-section .content {
+    color: rgb(14, 14, 14);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 2rem;
+    max-width: 600px;
+}
+
+.content p {
+    font-weight: 400;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.content button {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.content button:hover {
+    color: #fff;
+    background: #C06B3E;
 }

@@ -1,3 +1,54 @@
 body {
-    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+.hero-section .banner {
+    width: 100%;
+    height: 100%;
+    align-items: right;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+}
+
+.hero-section .content {
+    color: rgb(14, 14, 14);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 2rem;
+    max-width: 2000px;
+}
+
+.content p {
+    font-weight: 400;
+    margin-top: 15px;
+    max-width: 4000px;
+}
+
+.content button {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.content button:hover {
+    color: #fff;
+    background: #C06B3E;
 }
