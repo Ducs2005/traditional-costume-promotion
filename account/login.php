@@ -14,7 +14,7 @@
     
 </head>
 <?php 
-    include "../model/dbconnect.php";
+    include_once "../model/dbconnect.php";
 
     $email = $password = "";
     $email_err = $password_err = "";
@@ -43,11 +43,15 @@
             $stmt->execute();
             $result = $stmt->get_result();
             if ($result->num_rows == 1) {
-                $row = $result->fetch_assoc();
-                $stored_pwd = $row['password'];
-                if (password_verify($password, $stored_pwd)) {
-                    $_SESSION['name'] = $row['name'];
-                    header("location:../home.php");
+                $row = $result->fetch_assoc();      
+                if (isset($row['password'])) { // Kiểm tra xem khóa 'password' có tồn tại không
+                    $stored_pwd = $row['password'];
+                    if (password_verify($password, $stored_pwd)) {
+                        $_SESSION['name'] = $row['name'];
+                        header("location:../home.php");
+                    } else {
+                        $err_msg = "Incorrect password";
+                    }
                 } else {
                     $err_msg = "Incorrect password.";
                 }
@@ -125,13 +129,11 @@
                     <p>Don't have an account? <a href="../account/register.php">Register</a></p>
                 </div>
             </form>
-        </div>
-       
+        </div>  
     </div>
-        
+       
 </body>
 <script src="../js/login_register.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-</div>
 </html>
