@@ -69,6 +69,12 @@
                     <p>Đối khâm tức vạt áo đối nhau, đối khâm là dạng áo có hai vạt trước đặt song song nhau, thường để buông thõng, khoác bên ngoài, nhìn được rõ lớp áo bên trong. Loại áo này thường xẻ tà 2 bên, độ dài chưa chạm đến chân váy. Từ thời Lý – Trần nước ta đã chuộng lại áo này.</p>
                     <a href="product3-details.html" class="btn">Xem Chi Tiết</a>
                 </div>
+                <div class="product-card">
+                    <img src="img//product/caothuc.jpg" alt="Sản phẩm 4">
+                    <h2>Tiện phục, cao thúc</h2>
+                    <p>Đôi khi phụ nữ không khoác giao hay viên lĩnh ở ngoài, chỉ mặc chiếc nội y (áo yếm), choàng thêm áo đối khâm. Đây là kiểu tiện phục quen thuộc của các hậu phi. Khi nội y phụ nữ chỉ là dạng quấn quanh ngực, kết hợp với thường kéo cao và đối khâm, sẽ tạo nên một kiểu trang phục khá giống trang phục của phụ nữ thời Đường. Dạng trang phục này được gọi là “cao thúc”.</p>
+                    <a href="product3-details.html" class="btn">Xem Chi Tiết</a>
+                </div>
             </div>
         </div>
     </section>
