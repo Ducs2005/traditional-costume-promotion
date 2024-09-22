@@ -72,8 +72,20 @@
                 <div class="product-card">
                     <img src="img//product/caothuc.jpg" alt="Sản phẩm 4">
                     <h2>Tiện phục, cao thúc</h2>
-                    <p>Đôi khi phụ nữ không khoác giao hay viên lĩnh ở ngoài, chỉ mặc chiếc nội y (áo yếm), choàng thêm áo đối khâm. Đây là kiểu tiện phục quen thuộc của các hậu phi. Khi nội y phụ nữ chỉ là dạng quấn quanh ngực, kết hợp với thường kéo cao và đối khâm, sẽ tạo nên một kiểu trang phục khá giống trang phục của phụ nữ thời Đường. Dạng trang phục này được gọi là “cao thúc”.</p>
-                    <a href="product3-details.html" class="btn">Xem Chi Tiết</a>
+                    <p>Các hậu phi có tiện phục quen thuộc là phối nội y (áo yếm), choàng thêm áo đối khâm. Khi nội y phụ nữ chỉ là dạng quấn quanh ngực, kết hợp với thường kéo cao và đối khâm, sẽ tạo nên một kiểu trang phục khá giống trang phục của phụ nữ thời Đường, gọi là “cao thúc”.</p>
+                    <a href="product4-details.html" class="btn">Xem Chi Tiết</a>
+                </div>
+                <div class="product-card">
+                    <img src="img//product/vankiennu.jpg" alt="Sản phẩm 5">
+                    <h2>Vân kiên</h2>
+                    <p>Vân kiên là một loại áo choàng, áo cánh dơi. Loại áo choàng cổ này được dùng để tránh bẩn vai áo và trang trí như một phục sức. Vân kiên rất phổ biến trên các tượng thời Lê, tầng lớp quý tộc thời đầu nhà Nguyễn và giới múa hát ca kịch nhà Nguyễn. Vân kiên còn có thể được mặc như điểm nhấn của trang phục hiện đại.</p>
+                    <a href="product5-details.html" class="btn">Xem Chi Tiết</a>
+                </div>
+                <div class="product-card">
+                    <img src="img//product/aotacnu.jpg" alt="Sản phẩm 6">
+                    <h2>Áo ngũ thân, áo tấc</h2>
+                    <p>Áo ngũ thân được chắp từ năm mảnh vải, che từ cổ đến hoặc quá đầu gối, cổ đứng cài cúc bên phải, thường mặc với quần dài. Từ thời Nguyễn, áo ngũ thân có hai loại: áo tấc và ngũ thân tay chẽn. Áo tấc là áo ngũ thân tay thụng. Còn áo ngũ thân tay chẽn có thân áo như áo tấc nhưng được may kiểu ống tay hẹp.</p>
+                    <a href="product6-details.html" class="btn">Xem Chi Tiết</a>
                 </div>
             </div>
         </div>
