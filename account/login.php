@@ -7,6 +7,9 @@
     $err_msg = "";
     $error = false;
 
+
+
+
     if (isset($_POST['submit'])) {
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
@@ -35,13 +38,10 @@
                     $stored_pwd = $row['password'];
                     if (password_verify($password,$stored_pwd)) {
                         $_SESSION['name'] = $row['name'];
-                        header("location:../home.php");
-                    }else {
-                        $err_msg = "Incorrect password.";
-                    }                 
-                } 
-                else {
-                    $err_msg =  print_r($row);
+                        header("location:home.php");
+                    }
+                } else {
+                    $err_msg = "Incorrect password.";
                 }
             }
             else {
@@ -77,8 +77,12 @@
         <div  class="alert alert-danger">
             <?= $err_msg; ?>
         </div>
-        <?php    } ?>
+        <?php    }
+        
+        
+        ?>
 
+        
         <!-- login -->
         <div class="form-box login">
             <form action="login.php" method="post">
