@@ -1,6 +1,6 @@
 <?php
     session_start();  
-    include_once "../model/dbconnect.php";
+    include "../model/dbconnect.php";
 
     $email = $password = "";
     $email_err = $password_err = "";
@@ -11,7 +11,6 @@
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
 
-        //validate input
         if ($email == "") {
             $email_err = "Please enter email";
             $error = true;
@@ -25,19 +24,24 @@
         if (!$error) {
             $sql = "select * from users where email = ?";
             $stmt = $connect->prepare($sql);
-            $stmt->bind_param("s", $email);
+            $stmt->bind_param('s',$email);
             $stmt->execute();
             $result = $stmt->get_result();
+
             if ($result->num_rows == 1) {
                 $row = $result->fetch_assoc();      
                 if (isset($row['password'])) {
+                    
                     $stored_pwd = $row['password'];
-                    if (password_verify($password, $stored_pwd)) {
+                    if (password_verify($password,$stored_pwd)) {
                         $_SESSION['name'] = $row['name'];
-                        header("location:home.php");
-                    }
-                } else {
-                    $err_msg = "Incorrect password.";
+                        header("location:../home.php");
+                    }else {
+                        $err_msg = "Incorrect password.";
+                    }                 
+                } 
+                else {
+                    $err_msg =  print_r($row);
                 }
             }
             else {

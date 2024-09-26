@@ -25,14 +25,14 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <!-- <div class="menubar">
+        <div class="menubar">
             <?php if (isset($_SESSION['name'])){ ?>
-            <li><span><?= htmlspecialchars($_SESSION['name']); ?></span></li> -->
-                <!-- <ul class="sub-menu">
+            <li><span><?= htmlspecialchars($_SESSION['name']); ?></span></li>
+                <ul class="sub-menu">
                     <li><a href="../account/logout.php">Logout</a></li>
-                </ul> -->
-            <!-- <?php   }
-            else { ?> -->
+                </ul>
+            <?php   }
+            else { ?>
                 <ul>
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="product_description.php">Cổ phục</a>
@@ -59,8 +59,8 @@
                         <i class="fa fa-bars"></i>
                     </label>
                 </div>
-            <!-- <?php } ?>
-        </div>        -->
+            <?php } ?>
+        </div>       
     </header>
 </body>
 </html>
