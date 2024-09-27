@@ -1,21 +1,23 @@
 /* Banner Styles */
 .banner {
-    width: 100vw;
-    position: relative; /* Allows absolute positioning of children */
+    width: calc(100vw - 60px); /* Subtracting padding/margin for alignment */
+    margin: 0 20px; /* Left and right alignment for large screens */
+    position: relative;
     overflow: hidden;
     text-align: center;
     display: inline-block;
-
 }
 
+
+/* Image Styling */
 .banner img {
-    width: 90%;
-    height: auto;
+    width: 100%;
+    height: auto; /* Makes the image take the full height of the container */
     object-fit: cover;
+    object-position: center;
     opacity: 0.9;
     border-radius: 10px;
 }
-
     /* Initially hide the content */
     /*  */
 .banner-content {
@@ -64,23 +66,27 @@
     opacity: 1; /* Makes content visible on hover */
 }
 
-/* Responsive Design */
 @media only screen and (max-width: 768px) {
     .banner {
-        height: auto;
+        width: calc(100vw - 10px); /* Adjust width for smaller screens */
+        margin: 0 5px; /* Reduce left and right alignment to 5px on small screens */
     }
 
+
+    .banner img {
+        width: 100%;
+        height: 250px; /* Set a fixed height to prevent excessive height on small screens */
+        object-fit: cover; /* Maintains aspect ratio */
+        object-position: center; /* Center image horizontally and vertically */
+    }
+
+    /* Adjust Banner Content for Small Screens */
     .banner-content h1 {
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive font size */
     }
 
     .banner-content p {
-        font-size: clamp(1rem, 3vw, 1.5 rem); /* Adjusts responsively */
-    }
-
-    .banner img {
-        width: 70%;
-        height: auto;
+        font-size: clamp(1rem, 3vw, 1.3rem); /* Responsive font size */
     }
 }
 

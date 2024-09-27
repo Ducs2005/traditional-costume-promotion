@@ -6,7 +6,6 @@
     <title>Home view</title>
 
     <!-- Include CSS file -->
-    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -14,7 +13,7 @@
         include("view/header.php");
     ?>
     
-    <br><br><br><br>
+    <br><br><br><br> <br><br><br>
 
     <?php 
         include("view/banner.php"); 
@@ -23,7 +22,7 @@
     <br><br><br>
 
     <?php
-        include("view/product_list.php");
+        include("view/product.php");
     ?>
 
     <br><br><br>

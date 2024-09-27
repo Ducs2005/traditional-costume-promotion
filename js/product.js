@@ -22,7 +22,7 @@ const products = [
 
 // Function to display products
 function displayProducts() {
-    const productContainer = document.querySelector('.product');
+    const productContainer = document.querySelector('.list-item');
 
     // Clear existing content in the product container
     productContainer.innerHTML = '';
@@ -30,7 +30,7 @@ function displayProducts() {
     // Loop through the products array and create product elements
     products.forEach((product) => {
         const productItem = document.createElement('div');
-        productItem.classList.add('product-item');
+        productItem.classList.add('item');
 
         productItem.innerHTML = `
             <img src="${product.image}" alt="${product.name}">

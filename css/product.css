@@ -1,0 +1,38 @@
+.product {
+    width: calc(100vw - 60px); /* Subtracting padding/margin for alignment */
+    margin: 0 20px; /* Left and right alignment for large screens */
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(228, 226, 226);
+    border-radius: 20px;
+    
+}
+
+.product .tag-container {
+    text-align: center;
+    height: 30px;
+    background-color: rgb(230, 62, 62);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.product .list-item {
+    border-radius: 10px;
+
+}
+.product .list-item .item {
+    border-radius: 10px;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .product {
+        width: calc(100vw - 10px); /* Adjust width for smaller screens */
+        margin: 0 5px; /* Reduce left and right alignment to 5px on small screens */
+    }
+
+}
