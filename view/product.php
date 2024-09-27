@@ -2,19 +2,23 @@
 
 <div class="product">
     <div class="tag-container">
-        Nổi bật nhất bhgdhgdhd
+        Nổi bật nhất 
         <br>
     </div>
+    
+    <div class="filter-container">
+        <input type="text" id="productSearch" placeholder="Search products..." onkeyup="filterProducts()">
+        <select id="productCategory" onchange="filterProducts()">
+            <option value="">All Categories</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <option value="category3">Category 3</option>
+        </select>
+    </div>
     <br> <br> 
-    <div class="list-item">
-        <div class="item"></div>
-    </div>
-     
-    </div>
 
+    <div class="list-item"></div> <!-- Product items will be appended here -->
+    <div class="pagination"></div> <!-- Pagination container -->
 </div>
+
 <script src="js/product.js"></script>
-
-
-
-
