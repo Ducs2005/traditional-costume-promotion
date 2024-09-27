@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                 It highlights unique styles, craftsmanship, and traditions, offering a glimpse into each culture's identity. 
                 Explore and appreciate the diversity of timeless attire through this platform.
             </p>
-            <button>Explore</button>
+            <button> <a href="home_view.php">Explore</a></button>
         </div>
     </div>
 

@@ -56,10 +56,21 @@ body {
     transition: background 0.2s ease, color 0.2s ease; 
 }
 
+.content button a {
+    text-decoration: none;
+    color: #9f0101;
+    font-weight: bolder;
+}
+
 .content button:hover {
     background: #960e0e;
     color: #fff; 
 }
+
+.content button a:hover {
+    color: #fff; 
+}
+
 
 .banner {
     width: 100%;
