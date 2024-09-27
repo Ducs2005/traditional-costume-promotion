@@ -46,6 +46,4 @@
             }
         }
     }
-
-    require "./account/MVC/view/login.php";
 ?>

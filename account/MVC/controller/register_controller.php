@@ -56,6 +56,4 @@
         }
     }
 
-    require "./account/MVC/view/register.php";
-
 ?>

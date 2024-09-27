@@ -1,8 +1,3 @@
-<?php 
-    if (!isset($_SESSION) || session_id()=="" || session_status() === PHP_SESSION_NONE) {
-        session_start();
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,19 +21,19 @@
             </form>
         </div>
         <div class="menubar">
+            <ul>
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="product_description.php">Cổ phục</a>
                         <ul class="sub-menu">
                             <li><a href="">Áo giao lĩnh</a></li>
                             <li><a href="">Áo viên lĩnh</a></li>
                             <li><a href="">Áo đối khâm</a></li>
-                        </ul>
-                
-                
+                        </ul>               
                     </li>
                     <li><a href="#">Về chúng tôi</a></li>         
                     <li><a href="#">Liên lạc</a></li>
-                    <li><a href="../account/MVC/view/login.php">Đăng nhập</a></li>
+                    <li><a href="../account/login.php">Đăng nhập</a></li>
+                
                     <li>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-tiktok"></i></a>
