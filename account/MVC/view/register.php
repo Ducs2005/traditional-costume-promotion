@@ -1,56 +1,3 @@
-<?php
-    session_start();  
-    include "../model/dbconnect.php";
-
-    $email = $password = "";
-    $email_err = $password_err = "";
-    $err_msg = "";
-    $error = false;
-
-
-
-
-    if (isset($_POST['submit'])) {
-        $email = trim($_POST['email']);
-        $password = trim($_POST['password']);
-
-        if ($email == "") {
-            $email_err = "Please enter email";
-            $error = true;
-        }
-        
-        if ($password == "") {
-            $password_err = "Please enter password";
-            $error = true;
-        }
-
-        if (!$error) {
-            $sql = "select * from users where email = ?";
-            $stmt = $connect->prepare($sql);
-            $stmt->bind_param('s',$email);
-            $stmt->execute();
-            $result = $stmt->get_result();
-
-            if ($result->num_rows == 1) {
-                $row = $result->fetch_assoc();      
-                if (isset($row['password'])) {
-                    
-                    $stored_pwd = $row['password'];
-                    if (password_verify($password,$stored_pwd)) {
-                        $_SESSION['name'] = $row['name'];
-                        header("location:home.php");
-                    }
-                } else {
-                    $err_msg = "Incorrect password.";
-                }
-            }
-            else {
-                $err_msg = "Email is not registered";
-            }
-        }
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +6,7 @@
     <link rel="stylesheet" href="../css/login_register.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-    <title>Login</title>
+    <title>Register</title>
     
 </head>
 
@@ -73,40 +20,50 @@
         </span> 
 
         <?php 
+        if (!empty($succ_msg)) { ?>
+        <div  class="alert alert-success">
+            <?= $succ_msg; ?>
+        </div>
+        <?php    } ?>
+
+        <?php 
         if (!empty($err_msg)) { ?>
         <div  class="alert alert-danger">
             <?= $err_msg; ?>
         </div>
-        <?php    }
-        
-        
-        ?>
+        <?php    } ?>
 
-        
-        <!-- login -->
-        <div class="form-box login">
-            <form action="login.php" method="post">
+        <!-- registration -->
+        <div class="form-box register">
+            <form action="#" method="post">               
                 <img src="../img/logo.png" alt="logo">
                 <h1>WELCOME TO OUR PAGE</h1>         
                 <!-- input -->
                 <div class="input-box">
-                    <input type="text" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Username" name="name" required>
                     <i class='bx bx-user' ></i>
                 </div>
+                <div class="text-danger"><?= $name_err?></div>
+    
+                <div class="input-box">
+                    <input type="text" placeholder="Email" name="email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="text-danger" style="color: #fff;"><?= $email_err?></div>
     
                 <div class="input-box">
                     <input type="password" placeholder="Password" name="password" required>
                     <i class='bx bx-lock-alt' ></i>
                 </div>
+                <div class="text-danger" style="color: #fff;"><?= $password_err?></div>
     
                 <!-- forgot pwd -->
-                <div class="remember-forgot">
-                    <label><input type="checkbox" name="remember">Remember me</label>
-                    <a href="#">Forgot password?</a>
+                <div class="agree">
+                    <label><input type="checkbox">I agree to the <a href="#">Service</a> and <a href="#">Conditions</a></label>
                 </div>
     
                 <!-- submit -->
-                <button type="submit" class="btn1" name="submit">Login</button>
+                <button type="submit" name="submit" class="btn2">Register</button>
                 
                 <!-- auto login -->
                 <div class="authentication-social">
@@ -118,28 +75,30 @@
                     <!-- Google -->
                     <a href="#" class="google" rel="nofollow">
                         <i class='bx bxl-google'></i>
-                        <span>Login with Google</span>
+                        <span>Register with Google</span>
                     </a>
                     <br>
                     <!-- Facebook -->
                     <a href="#" class="fb" rel="nofollow">
                         <i class='bx bxl-facebook-circle' ></i>
-                        <span>Login with Facebook</span>
+                        <span>Register with Facebook</span>
                     </a>    
                 </div>
     
                 <!-- register link -->
-                <div class="register-link">
-                    <p>Don't have an account? <a href="../account/register.php">Register</a></p>
+                <div class="loginLink">
+                    <p>Already have an account? <a href="../account/login.php">Login</a></p>
                 </div>
             </form>
-        </div>  
+        </div>
     </div>
-       
+        
 </body>
 <script src="../js/login_register.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </html>
