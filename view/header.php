@@ -26,14 +26,6 @@
             </form>
         </div>
         <div class="menubar">
-            <?php if (isset($_SESSION['name'])){ ?>
-            <li><span><?= htmlspecialchars($_SESSION['name']); ?></span></li>
-                <ul class="sub-menu">
-                    <li><a href="../account/logout.php">Logout</a></li>
-                </ul>
-            <?php   }
-            else { ?>
-                <ul>
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="product_description.php">Cổ phục</a>
                         <ul class="sub-menu">
@@ -59,7 +51,6 @@
                         <i class="fa fa-bars"></i>
                     </label>
                 </div>
-            <?php } ?>
         </div>       
     </header>
 </body>
