@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
 }
 
 body {
@@ -26,7 +28,7 @@ body {
 
 .content h1 {
     font-size: 2.5rem;
-    font-weight: bolder;
+    font-weight: 500;
     max-width: 2000px;
     color: #9b0000;
     text-align: center;
@@ -48,7 +50,7 @@ body {
     border: 2px solid #a30202;
     outline: none;
     font-size: 1rem; 
-    font-weight: 800; 
+    font-weight: 900; 
     margin-top: 35px; 
     padding: 12px 30px; 
     border-radius: 6px;
