@@ -8,6 +8,7 @@
 </head>
 
 <?php include('view/header.php') ?>
+<?php include('view/chat_window.php') ?>
 <body>
 <br> <br> <br> <br><br> <br>
 <div class="account-container">

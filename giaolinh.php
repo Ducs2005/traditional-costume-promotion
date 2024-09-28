@@ -21,6 +21,7 @@
 </head>
 <body>
     <?php include('view/header.php') ?>
+    <?php include('view/chat_window.php') ?>
     <section class="product-info">
         <div class="container">
             <div class="product-image">
