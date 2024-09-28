@@ -7,7 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/product_list.css">
+    <link rel="stylesheet" href="css/product_type.css">
     <title>Header</title>
 </head>
 <body>
