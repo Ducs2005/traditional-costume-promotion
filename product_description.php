@@ -17,7 +17,7 @@
             <h1>Danh Mục Sản Phẩm</h1>
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="img//product/giaolinhnu.jpg" alt="Sản phẩm 1">
+                    <img src="img//product/giaolinhnam.jpg" alt="Sản phẩm 1">
                     <h2>Áo Giao Lĩnh</h2>
                     <p>Áo giao lĩnh là áo có phần cổ giao nhau ở trước ngực, vạt trái đè lên vạt phải, tay áo chủ yếu là loại tay thụng và tay hẹp. Mang đậm âm hưởng văn hóa Đông Á nhưng áo giao lĩnh Việt Nam vẫn có nét riêng là hai vạt váy trong và ngoài không bằng nhau. Vậy nên đây là trang phục mang đậm bản sắc văn hóa Việt.</p>
                     <a href="giaolinh.php" class="btn">Xem Chi Tiết</a>
