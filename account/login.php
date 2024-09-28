@@ -74,14 +74,10 @@
         <div  class="alert alert-danger">
             <?= $err_msg; ?>
         </div>
-        <?php    }
-        
-        
-        ?>
-
-        
+        <?php    }      ?>
+      
         <!-- login -->
-        <div class="form-box login">
+        <div class="form-box login">          
             <form action="login.php" method="post">
                 <img src="../img/logo.png" alt="logo">
                 <h1>WELCOME TO OUR PAGE</h1>         

@@ -36,8 +36,13 @@
                     <li><a href="#">Liên lạc</a></li>
                     <!-- Check if the user is logged in using PHP -->
                     <?php if (isset($_SESSION['name']) && !empty($_SESSION['name'])): ?>
-                        <li><a href="account.php">Tài khoản</a></li>
-                        <li><a href="javascript:void(0)" id="toggleChatLink">Tin nhắn</a></li>
+                        <li>
+                            <a href="account.php"> <?php echo $_SESSION['name'] ?></a>
+                            <ul class="sub-menu">
+                                <li><a href="">Trang cá nhân</a></li>
+                                <li><a href="">Đăng xuất</a></li>
+                            </ul>
+                        </li>
                     <?php else: ?>
                         <li><a href="account/login.php">Đăng nhập</a></li>
                     <?php endif; ?>

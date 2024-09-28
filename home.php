@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
 </head>
@@ -14,13 +15,15 @@
     
     <div class="hero-section">    
         <div class="content">
-            <h1>Welcome to the Vietnamese traditional custome </h1>
+            <h1>TRANG PHỤC CỔ VIỆT NAM</h1>
              <p>
-                A traditional clothing website showcases the beauty and heritage of cultural garments from around the world. 
-                It highlights unique styles, craftsmanship, and traditions, offering a glimpse into each culture's identity. 
-                Explore and appreciate the diversity of timeless attire through this platform.
+                Những trang phục cổ Việt Nam không chỉ dừng lại ở việc là di tích quý báu của lịch sử nước nhà 
+                mà còn đại diện những nét đặc trưng của nền văn hoá dân tộc. 
+                Không hẳn là Việt phục cổ không có được sự quan tâm của đông đảo mọi người, 
+                trên thực tế, rất có nhiều người muốn tìm hiểu về Việt phục nhưng lại gặp khó khăn trong việc tìm kiếm tư liệu tìm hiểu.
+                Trang web này sẽ cung cấp đủ những tư liệu quý giá đó.
             </p>
-            <button> <a href="home_view.php">Explore</a></button>
+            <button> <a href="product_list.php">Bắt đầu</a></button>
         </div>
     </div>
 
