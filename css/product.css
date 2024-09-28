@@ -1,3 +1,4 @@
+
 .product {
     width: calc(100vw - 60px); /* Subtracting padding/margin for alignment */
     margin: 0 20px; /* Left and right alignment for large screens */
@@ -33,6 +34,14 @@
     background-color: rgb(230, 62, 62);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+.product .tag-container .centered-text {
+    height: 100%;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    border: 1px solid #ccc; /* Optional, just for visualization */
+    font-family: 'Playfair Display', serif; 
 }
 
 /* List item container as a flexbox */

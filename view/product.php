@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="css/product.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
 <div class="product">
     <div class="tag-container">
-        Nổi bật nhất 
+        <div class="centered-text"> Nổi bật nhất</div>
         <br>
     </div>
     

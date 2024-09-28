@@ -32,7 +32,7 @@
                     </li>
                     <li><a href="#">Về chúng tôi</a></li>         
                     <li><a href="#">Liên lạc</a></li>
-                    <li><a href="../account/MVC//controller/login_controller.php">Đăng nhập</a></li>
+                    <li><a href="account/login.php">Đăng nhập</a></li>
                 
                     <li>
                         <a href="#"><i class="fab fa-facebook"></i></a>

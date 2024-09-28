@@ -35,7 +35,7 @@
                     $stored_pwd = $row['password'];
                     if (password_verify($password,$stored_pwd)) {
                         $_SESSION['name'] = $row['name'];
-                        header("location:home.php");
+                        header("location:../home.php");
                     }
                 } else {
                     $err_msg = "Incorrect password.";
