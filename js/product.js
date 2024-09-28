@@ -14,29 +14,34 @@ class Pagination {
     displayProducts() {
         // Clear existing content in the product container
         this.productContainer.innerHTML = '';
-
+    
         // Calculate start and end indices for the current page
         const startIndex = (this.currentPage - 1) * this.itemsPerPage;
         const endIndex = startIndex + this.itemsPerPage;
-
+    
         // Get the products for the current page
         const currentProducts = this.products.slice(startIndex, endIndex);
-
+    
         // Loop through the current products array and create product elements
-        currentProducts.forEach((product) => {
+        currentProducts.forEach((product, index) => {
             const productItem = document.createElement('div');
             productItem.classList.add('item');
-
+    
+            // Adding a click event to navigate to the product details page
+            productItem.addEventListener('click', () => {
+                window.location.href = `product_description.php?id=${startIndex + index + 1}`;
+            });
+    
             productItem.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h4>${product.name}</h4>
                 <p>${product.price}</p>
             `;
-
+    
             // Append each product item to the product container
             this.productContainer.appendChild(productItem);
         });
-
+    
         // Update pagination controls
         this.updatePagination();
     }
