@@ -26,7 +26,7 @@
                     <img src="img//product/vienlinhnam.jpg" alt="Sản phẩm 2">
                     <h2>Áo Viên Lĩnh</h2>
                     <p>Áo viên lĩnh còn gọi là áo cổ tròn, cổ kiềng… gài cúc bên vai phải. Dạng áo này tương tự như giao lĩnh, nhưng áo là dạng cổ tròn thay vì cổ giao nhau, cũng có dạng vạt ngắn và vạt dài. Vào thời Lê, Nguyễn áo viên lĩnh là kiểu áo chính thức nhất của tầng lớp quan viên và triều đình.</p>
-                    <a href="product2-details.html" class="btn">Xem Chi Tiết</a>
+                    <a href="vienlinh.php" class="btn">Xem Chi Tiết</a>
                 </div>
                 <div class="product-card">
                     <img src="img//product/doikhamnu.jpg" alt="Sản phẩm 3">
