@@ -27,7 +27,7 @@
 
     <div class="account-info">
         <label class="info-label">Name:</label>
-        <p class="info-value">John Doe</p>
+        <p class="info-value"><?php echo $_SESSION['name'] ?></p>
     </div>
     <div class="account-info">
         <label class="info-label">Email:</label>
