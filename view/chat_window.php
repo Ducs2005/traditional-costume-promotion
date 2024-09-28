@@ -7,16 +7,33 @@
     <title>Chat Window</title>
 </head>
 <body>
+    <!-- Chat Window -->
     <div id="chatWindow" class="chat-window">
         <div class="chat-header">
             <span>Tin nhắn</span>
             <button id="closeChatBtn" class="close-chat-btn">&times;</button>
         </div>
         <div class="chat-body">
-            <!-- Chat content can go here -->
-            <p>Messages will appear here.</p>
+            <!-- Accounts List -->
+            <div id="accountsList" class="accounts-list">
+                <!-- Placeholder for the list of accounts -->
+                
+                <ul>
+                    <li class="account" data-account-id="1">Account 1</li>
+                    <li class="account" data-account-id="2">Account 2</li>
+                    <li class="account" data-account-id="3">Account 3</li>
+                </ul>
+            </div>
+
+            <!-- Chat content (dynamic) -->
+            <div id="chatContent" class="chat-content">
+                <!-- Placeholder for chat messages -->
+               
+            </div>
         </div>
     </div>
+
+    <!-- External JS -->
+    <script src="js/chat.js"></script>
 </body>
-<script src="js/chat.js"></script>
 </html>
