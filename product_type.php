@@ -12,6 +12,7 @@
 </head>
 <body>
     <?php include('view/header.php') ?>
+    <?php include('view/chat_window.php') ?>
     <section class="Category">
         <div class="container">
             <h1>Danh Mục Sản Phẩm</h1>

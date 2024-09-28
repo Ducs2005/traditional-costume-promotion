@@ -37,6 +37,7 @@
                     <!-- Check if the user is logged in using PHP -->
                     <?php if (isset($_SESSION['name']) && !empty($_SESSION['name'])): ?>
                         <li><a href="account.php">Tài khoản</a></li>
+                        <li><a href="javascript:void(0)" id="toggleChatLink">Tin nhắn</a></li>
                     <?php else: ?>
                         <li><a href="account/login.php">Đăng nhập</a></li>
                     <?php endif; ?>

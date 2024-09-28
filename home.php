@@ -10,6 +10,7 @@
 <body>
 
     <?php include 'view/header.php'; ?>
+    <?php include('view/chat_window.php') ?>
     
     <div class="hero-section">    
         <div class="content">

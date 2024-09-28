@@ -12,6 +12,7 @@
     <?php
         include("view/header.php");
     ?>
+    <?php include('view/chat_window.php') ?>
     
     <br><br><br><br> <br><br><br>
 
