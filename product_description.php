@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/product_description.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
+<?php include('view/header.php') ?>
 
 <body>
-    <?php include('view/header.php') ?>
     <br><br><br><br><br><br>
 
     <div class="container">
-        <a href="product_list.php" class="back-button">← Back to Products</a>
+
 
         <div class="product-details">
             <div class="product-image-gallery">
@@ -29,10 +29,26 @@
                     <img class="thumbnail" src="img/product/img3.jpg" onclick="setImage('img/product/img3.jpg')" alt="Thumbnail 3">
                 </div>
             </div>
+            
             <div class="product-info">
                 <h1 id="productName">Product Name</h1>
                 <p id="productPrice">Price</p>
-                <p id="productDescription">Product Description</p>
+                <p id="productDescription">Product Description: This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.</p>
+
+                <!-- Product Tags -->
+                <div class="product-tags">
+                    <strong>Tags:</strong>
+                    <ul>
+                        <li>Traditional Wear</li>
+                        <li>Silk</li>
+                        <li>Áo Dài</li>
+                        <li>Formal Wear</li>
+                        <li>Unisex</li>
+                    </ul>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
             </div>
         </div>
     </div>
@@ -43,105 +59,137 @@
                 id: 1,
                 name: "Áo Dài Ngũ Thân Tay Chẵn học sinh vải lụa văn cho nữ",
                 price: "690.000₫",
+                description: "This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.",
                 images: [
                     "img/product/img1.jpg",
                     "img/product/img2.jpg",
                     "img/product/img3.jpg"
-                ] 
+                ],
+                tags: ["Traditional Wear", "Silk", "Áo Dài", "Formal Wear", "Unisex"]
             },
-                {
-                id: 2,
-                name: "Áo ngũ thân cách tân viền lục giác (Unisex)",
-                price: "390.000₫",
-                images: [
-                    "img/product/img1.jpg",
-                    "img/product/img2.jpg",
-                    "img/product/img3.jpg"
-                ]             },
             {
-                id: 3,
-                name: "Áo Ngũ Thân cách tân Xuân Hiểu",
-                price: "890.000₫",
+                id: 2,
+                name: "Áo Dài Ngũ Thân Tay Chẵn học sinh vải lụa văn cho nữ",
+                price: "690.000₫",
+                description: "This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.",
                 images: [
                     "img/product/img1.jpg",
                     "img/product/img2.jpg",
                     "img/product/img3.jpg"
-                ]             },
+                ],
+                tags: ["Traditional Wear", "Silk", "Áo Dài", "Formal Wear", "Unisex"]
+            },{
+                id: 3,
+                name: "Áo Dài Ngũ Thân Tay Chẵn học sinh vải lụa văn cho nữ",
+                price: "690.000₫",
+                description: "This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.",
+                images: [
+                    "img/product/img1.jpg",
+                    "img/product/img2.jpg",
+                    "img/product/img3.jpg"
+                ],
+                tags: ["Traditional Wear", "Silk", "Áo Dài", "Formal Wear", "Unisex"]
+            },
             {
                 id: 4,
-                name: "Áo mới 1",
-                price: "500.000₫",
+                name: "Áo Dài Ngũ Thân Tay Chẵn học sinh vải lụa văn cho nữ",
+                price: "690.000₫",
+                description: "This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.",
                 images: [
                     "img/product/img1.jpg",
                     "img/product/img2.jpg",
                     "img/product/img3.jpg"
-                ]             },
+                ],
+                tags: ["Traditional Wear", "Silk", "Áo Dài", "Formal Wear", "Unisex"]
+            },
             {
                 id: 5,
-                name: "Áo mới 2",
-                price: "450.000₫",
+                name: "Áo Dài Ngũ Thân Tay Chẵn học sinh vải lụa văn cho nữ",
+                price: "690.000₫",
+                description: "This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.",
                 images: [
                     "img/product/img1.jpg",
                     "img/product/img2.jpg",
                     "img/product/img3.jpg"
-                ]             },
-            {
+                ],
+                tags: ["Traditional Wear", "Silk", "Áo Dài", "Formal Wear", "Unisex"]
+            },{
                 id: 6,
-                name: "Áo mới 3",
-                price: "300.000₫",
+                name: "Áo Dài Ngũ Thân Tay Chẵn học sinh vải lụa văn cho nữ",
+                price: "690.000₫",
+                description: "This is a beautiful and traditional Vietnamese garment made from luxurious silk fabric. Perfect for both casual and formal wear.",
                 images: [
                     "img/product/img1.jpg",
                     "img/product/img2.jpg",
                     "img/product/img3.jpg"
-                ]             },
+                ],
+                tags: ["Traditional Wear", "Silk", "Áo Dài", "Formal Wear", "Unisex"]
+            },
+            // Other products...
         ];
+
         let currentImageIndex = 0;
         let currentProduct = {};
 
         function getProductDetails() {
-            const params = new URLSearchParams(window.location.search);
-            const productId = parseInt(params.get('id'));
-            currentProduct = products.find(p => p.id === productId);
+    const params = new URLSearchParams(window.location.search);
+    const productId = parseInt(params.get('id'));
+    currentProduct = products.find(p => p.id === productId);
 
-            if (currentProduct) {
-                setImage(currentProduct.images[0]); // Set the first image
-                document.getElementById('productName').innerText = currentProduct.name;
-                document.getElementById('productPrice').innerText = currentProduct.price;
-                document.getElementById('productDescription').innerText = currentProduct.description || "This is a wonderful product. Don't miss out!";
-            }
-        }
+    if (currentProduct) {
+        setImage(currentProduct.images[0]);
+        document.getElementById('productName').innerText = currentProduct.name;
+        document.getElementById('productPrice').innerText = currentProduct.price;
+        document.getElementById('productDescription').innerText = currentProduct.description;
+        
+        const tagsContainer = document.querySelector('.product-tags ul');
+        tagsContainer.innerHTML = '';
+        currentProduct.tags.forEach(tag => {
+            const li = document.createElement('li');
+            const a = document.createElement('a'); // Create an anchor tag
+            a.textContent = tag;
+            a.href = "#"; // Temporary href, can be updated to something meaningful
+            a.classList.add('clickable-tag'); // Add a class for styling
+            a.onclick = function() {
+                alert(`Tag clicked: ${tag}`);
+                // Future functionality can be added here
+            };
+            li.appendChild(a);
+            tagsContainer.appendChild(li);
+        });
+    }
+}
 
-        // Function to set image based on the thumbnail clicked or arrows
         function setImage(image) {
             document.getElementById('productImage').src = image;
         }
 
-        // Function to navigate to the next image
         function nextImage() {
             if (currentImageIndex < currentProduct.images.length - 1) {
                 currentImageIndex++;
             } else {
-                currentImageIndex = 0; // Loop back to the first image
+                currentImageIndex = 0;
             }
             setImage(currentProduct.images[currentImageIndex]);
         }
 
-        // Function to navigate to the previous image
         function prevImage() {
             if (currentImageIndex > 0) {
                 currentImageIndex--;
             } else {
-                currentImageIndex = currentProduct.images.length - 1; // Loop back to the last image
+                currentImageIndex = currentProduct.images.length - 1;
             }
             setImage(currentProduct.images[currentImageIndex]);
         }
 
-        // Initialize the page on load
+        function addToCart() {
+            alert(`${currentProduct.name} has been added to your cart!`);
+            // Here you can add the functionality to update the cart in your application
+        }
+
         window.onload = getProductDetails;
     </script>
-
-
-    <?php include('view/product.php');?>
+    <?php include('view/product.php') ?>
     <?php include('view/footer.php') ?>
 </body>
 

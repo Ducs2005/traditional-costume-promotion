@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();   ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +34,12 @@
                     <li> <a href="product_list.php" > Cửa hàng </a> </li>
                     <li><a href="#">Về chúng tôi</a></li>         
                     <li><a href="#">Liên lạc</a></li>
-                    <li><a href="account/login.php">Đăng nhập</a></li>
+                    <!-- Check if the user is logged in using PHP -->
+                    <?php if (isset($_SESSION['name']) && !empty($_SESSION['name'])): ?>
+                        <li><a href="account.php">Tài khoản</a></li>
+                    <?php else: ?>
+                        <li><a href="account/login.php">Đăng nhập</a></li>
+                    <?php endif; ?>
                 
                     <li>
                         <a href="#"><i class="fab fa-facebook"></i></a>
