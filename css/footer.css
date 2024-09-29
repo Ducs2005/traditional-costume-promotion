@@ -12,7 +12,7 @@ body {
 footer {
     width: 100%;
     position: absolute;
-    background: url(../img/backgr.jpg);
+    background: url(../img/background/backgr.jpg);
     padding: 60px 0 10px 0;
     border-top-left-radius: 125px;
     font-size: 14px;

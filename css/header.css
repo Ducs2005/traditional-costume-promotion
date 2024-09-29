@@ -21,7 +21,7 @@ header {
     position: fixed;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background: url(../img/backgr.jpg);
+    background: url(../img/background/backgr.jpg);
 }
  
 header .sub-menu {

@@ -30,28 +30,28 @@
     <div class="banner">
         <div class="slider" style="--quantity: 8">
             <div class="item"style="--position: 1">
-                <img src="img/trangphuc1.jpg" alt="">
+                <img src="img/home/trangphuc1.jpg" alt="">
             </div>
             <div class="item"style="--position: 2">
-                <img src="img/trangphuc2.jpg" alt="">
+                <img src="img/home/trangphuc2.jpg" alt="">
             </div>
             <div class="item"style="--position: 3">
-                <img src="img/trangphuc3.jpg" alt="">
+                <img src="img/home/trangphuc3.jpg" alt="">
             </div>
             <div class="item"style="--position: 4">
-                <img src="img/trangphuc4.jpg" alt="">
+                <img src="img/home/trangphuc4.jpg" alt="">
             </div>
             <div class="item"style="--position: 5">
-                <img src="img/trangphuc5.jpg" alt="">
+                <img src="img/home/trangphuc5.jpg" alt="">
             </div>
             <div class="item"style="--position: 6">
-                <img src="img/trangphuc6.jpg" alt="">
+                <img src="img/home/trangphuc6.jpg" alt="">
             </div>
             <div class="item"style="--position: 7">
-                <img src="img/trangphuc7.jpg" alt="">
+                <img src="img/home/trangphuc7.jpg" alt="">
             </div>
             <div class="item"style="--position: 8">
-                <img src="img/trangphuc8.jpg" alt="">
+                <img src="img/home/trangphuc8.jpg" alt="">
             </div>
         </div>
     </div>

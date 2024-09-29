@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/background.jpg) no-repeat;
+    background: url(../img/background/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -84,22 +84,6 @@ body {
     cursor: pointer;
     z-index: 1;
 }
-
-/* .wrapper .form-box.login {
-    transition: transform .60s ease;
-    transform: translateX(0);
-} */
-
-/* .wrapper.active .form-box.login {
-    transition: none;
-    transform: translateX(-570px);
-} */
-
-/* .wrapper .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(570px);
-} */
 
 .wrapper.active .form-box.register {
     transition: transform .60s ease;

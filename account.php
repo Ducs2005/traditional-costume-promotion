@@ -13,7 +13,7 @@
 <br> <br> <br> <br><br> <br>
 <div class="account-container">
     <h1 class="account-title"><?php echo $_SESSION['name'] ?></h1>
-    <img src="img/background.jpg" alt="User Avatar" class="account-avatar">
+    <img src="img/background/background.jpg" alt="User Avatar" class="account-avatar">
     
     <!-- Add a button to change avatar and log out -->
     <div class="avatar-actions">
