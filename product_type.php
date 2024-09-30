@@ -101,7 +101,7 @@
 Điểm đặc biệt của áo lĩnh vạt dài triều Lê là có cổ cong võng. Kiểu cổ giao lĩnh này được thấy khá phổ biến từ đời Tống về trước, song đến triều Minh, cổ giao lĩnh thẳng hơn và kéo kín hơn, làm nên sự khác biệt giữa giao lĩnh triều Lê và Minh cũng như Triều Tiên (vốn chịu ảnh hưởng bởi phục sức Minh).
 Một điểm nữa có thể dùng để nhận biết là váy của Minh và Triều Tiên thường có nếp gấp còn váy thời Lê thì không.
                 </p>
-                </a><button onclick="switchPage('giaolinh2')" class="flip">Trang tiếp</button>
+                </a><button onclick="switchPage('giaolinh2')" class="flip">Trang sau</button>
             </div>
 
             <div class="product-details page" id="giaolinh2">
@@ -110,7 +110,7 @@ Một điểm nữa có thể dùng để nhận biết là váy của Minh và 
                 Giao lĩnh vạt ngắn dài không quá thân trên, thường dùng cho phụ nữ. Tại Việt Nam thời Lê, giao lĩnh vạt ngắn có thường quây bên ngoài, tương tự các thời kỳ trước của Trung Quốc, có nét tương đồng với giao lĩnh quây hakama của Nhật.
 Tuy nhiên giao lĩnh vạt ngắn quây thường triều Lê có thể phân biệt với giao lĩnh vạt ngắn quây thường của các triều đại ở Trung Quốc ở chỗ chiếc thường bên ngoài ngắn hơn chiếc thường (hoặc váy) bên trong, để lộ hai lớp váy. Trong khi đó, ở Trung Quốc (cũng như Nhật Bản và Triều Tiên), chiếc thường bên ngoài dài đến sát đất, che kín chiếc thường (hoặc váy) bên trong.
                 </p>
-                </a><button onclick="switchPage('giaolinh')" class="flip">Trang sau</button>
+                </a><button onclick="switchPage('giaolinh')" class="flip">Trang trước</button>
             </div>
         </div>
     </section>
@@ -154,7 +154,7 @@ Tuy nhiên giao lĩnh vạt ngắn quây thường triều Lê có thể phân b
                 Nhật bình thuộc dạng thức áo đối khâm khoác bên ngoài áo dài tay chẽn hoặc áo tấc, được cài khuy chính giữa. Ngoài ra, nút áo tròn bằng ngọc điêu khắc tinh xảo dùng để trang trí chính là điểm đặc trưng của nhật bình so với áo đối khâm phi phong nhà Minh.
                 Nguồn gốc Áo Nhật Bình được nhà Nguyễn phát triển lên, là dạng áo Đối Khâm có cổ hình chữ nhật to bản, dùng dây buộc 2 vạt áo. Do hoa văn ở cổ áo khi ghép lại tạo thành một hình chữ nhật ngay trước ngực người mặc, nên áo này gọi là áo Nhật Bình. Khắp thân áo trang trí theo thể thức hoa văn chính là dạng hình tròn khép kín, rải rác khắp áo đan xen với các hình phượng múa, hoa lá đính thêm các hạt tuyến lấp lánh. Ở tay áo đặc biệt có dải màu ngũ hành; lục, vàng, xanh, trắng, đỏ. Tuy nhiên quy chế tay dãy màu này lại không áp dụng trên loại áo Nhật Bình của bậc Hậu.
                 </p>
-                </a><button onclick="switchPage('doikham2')" class="flip">Trang tiếp</button>
+                </a><button onclick="switchPage('doikham2')" class="flip">Trang sau</button>
             </div>
 
             <div class="product-details page" id="doikham2">
@@ -163,7 +163,7 @@ Tuy nhiên giao lĩnh vạt ngắn quây thường triều Lê có thể phân b
                 Theo các nhà nghiên cứu lịch sử, áo tứ thân là sự tiến hóa từ áo đối khâm. Trong thế kỷ 20, trang phục của phụ nữ cần phải đơn giản để phù hợp với công việc nông nghiệp. Do đó, áo đối khâm đã được cải tiến để trở thành áo tứ thân như chúng ta biết ngày nay.
                 Mặc dù vậy, áo tứ thân vẫn giữ được thiết kế cổ áo đặc trưng. Khi mặc, người phụ nữ sẽ buộc hai tà áo phía trước lại với nhau để tạo nên vẻ ngoài gọn gàng, thuận tiện cho việc làm việc.
                 </p>
-                </a><button onclick="switchPage('doikham')" class="flip">Trang sau</button>
+                </a><button onclick="switchPage('doikham')" class="flip">Trang trước</button>
             </div>
     <script>
     function showProductInfo(pageId) {
