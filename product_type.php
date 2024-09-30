@@ -8,31 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/product_type.css">
+    <link rel="stylesheet" href="css/products.css">
     <title>Header</title>
+    <style>
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .product-info {
+            display: none;  
+        }
+    </style>
 </head>
 <body>
     <?php include('view/header.php') ?>
     <section class="Category">
         <div class="container">
-            <h1>Danh Mục Sản Phẩm</h1>
             <div class="product-grid">
                 <div class="product-card">
                     <img src="img//product/giaolinhnam.jpg" alt="Sản phẩm 1">
                     <h2>Áo giao lĩnh</h2>
                     <p>Áo giao lĩnh là áo có phần cổ giao nhau ở trước ngực, vạt trái đè lên vạt phải, tay áo chủ yếu là loại tay thụng và tay hẹp. Mang đậm âm hưởng văn hóa Đông Á nhưng áo giao lĩnh Việt Nam vẫn có nét riêng là hai vạt váy trong và ngoài không bằng nhau. Vậy nên đây là trang phục mang đậm bản sắc văn hóa Việt.</p>
-                    <a href="giaolinh.php" class="btn">Xem Chi Tiết</a>
+                    <button onclick="showProductInfo('giaolinh')" class="btn">Xem Chi Tiết</button>
                 </div>
                 <div class="product-card">
                     <img src="img//product/vienlinhnam.jpg" alt="Sản phẩm 2">
                     <h2>Áo viên lĩnh</h2>
                     <p>Áo viên lĩnh còn gọi là áo cổ tròn, cổ kiềng… gài cúc bên vai phải. Dạng áo này tương tự như giao lĩnh, nhưng áo là dạng cổ tròn thay vì cổ giao nhau, cũng có dạng vạt ngắn và vạt dài. Vào thời Lê, Nguyễn áo viên lĩnh là kiểu áo chính thức nhất của tầng lớp quan viên, triều đình và cả vua chúa.</p>
-                    <a href="vienlinh.php" class="btn">Xem Chi Tiết</a>
+                    <button onclick="showProductInfo('vienlinh')" class="btn">Xem Chi Tiết</button>
                 </div>
                 <div class="product-card">
                     <img src="img//product/doikhamnu.jpg" alt="Sản phẩm 3">
                     <h2>Áo đối khâm</h2>
                     <p>Đối khâm tức vạt áo đối nhau, đối khâm là dạng áo có hai vạt trước đặt song song nhau, thường để buông thõng, khoác bên ngoài, nhìn được rõ lớp áo bên trong. Loại áo này thường xẻ tà 2 bên, độ dài chưa chạm đến chân váy. Từ thời Lý – Trần nước ta đã chuộng lại áo này và sau này còn có thêm nhiều biến thể.</p>
-                    <a href="doikham.php" class="btn">Xem Chi Tiết</a>
+                    <button onclick="showProductInfo('doikham')" class="btn">Xem Chi Tiết</button>
                 </div>
                 <div class="product-card">
                     <img src="img//product/caothuc.jpg" alt="Sản phẩm 4">
@@ -73,5 +84,130 @@
             </div>
         </div>
     </section>
+
+    <section class="product-info">
+        <div class="inner_container">
+            <div class="product-image">
+                <img src="img/product/giaolinhnu.jpg" alt="Áo Giao Lĩnh">
+            </div>
+            <div class="product-details page" id="giaolinh">
+                <h1>Áo Giao Lĩnh</h1>
+                <p class="description">
+                Áo giao lĩnh còn được biết đến với tên trường lĩnh, tràng vạt, đối lĩnh là một dạng áo cổ nhất của văn hóa Đông Á. Loại áo này có cổ áo giao nhau ở trước ngực, và vạt nằm trên sẽ chéo qua bên phải của người mặc, bên trái của người nhìn. Từ xưa, loại áo này thường có nhiều kiểu ống tay áo, nhưng chủ yếu phân biệt ở dạng tay thụng rộng hoặc tay hẹp bó sát.
+                Kiểu áo này phổ biến ở Việt Nam vào thời Lý - Trần - Lê, cho đến năm 1744 khi có lệnh sửa đổi cách ăn mặc của người Đàng Trong. Ở Đàng Ngoài áo cổ chéo tiếp tục có mặt cho đến khi nhà Nguyễn dẹp nhà Tây Sơn, thống nhất sơn hà.
+                </p>
+                <h1>Giao lĩnh vạt dài</h1>
+                <p class="description">Giao lĩnh vạt dài dài quá đầu gối, cả nam lẫn nữ đều mặc. Khi mặc thì áo phủ bên ngoài thường (1 loại váy quây che hạ thể, cố định bởi 1 dây buộc lụa ở vùng hông). Dạng phục trang này phổ biến tại cả 4 nước Việt, Trung, Hàn, Nhật, song thay đổi qua các thời kỳ và nhiều khác biệt về tiểu tiết có thể dùng để nhận dạng.
+Điểm đặc biệt của áo lĩnh vạt dài triều Lê là có cổ cong võng. Kiểu cổ giao lĩnh này được thấy khá phổ biến từ đời Tống về trước, song đến triều Minh, cổ giao lĩnh thẳng hơn và kéo kín hơn, làm nên sự khác biệt giữa giao lĩnh triều Lê và Minh cũng như Triều Tiên (vốn chịu ảnh hưởng bởi phục sức Minh).
+Một điểm nữa có thể dùng để nhận biết là váy của Minh và Triều Tiên thường có nếp gấp còn váy thời Lê thì không.
+                </p>
+                </a><button onclick="switchPage('giaolinh2')" class="flip">Trang tiếp</button>
+            </div>
+
+            <div class="product-details page" id="giaolinh2">
+                <h1>Giao lĩnh vạt ngắn</h1>
+                <p class="description">
+                Giao lĩnh vạt ngắn dài không quá thân trên, thường dùng cho phụ nữ. Tại Việt Nam thời Lê, giao lĩnh vạt ngắn có thường quây bên ngoài, tương tự các thời kỳ trước của Trung Quốc, có nét tương đồng với giao lĩnh quây hakama của Nhật.
+Tuy nhiên giao lĩnh vạt ngắn quây thường triều Lê có thể phân biệt với giao lĩnh vạt ngắn quây thường của các triều đại ở Trung Quốc ở chỗ chiếc thường bên ngoài ngắn hơn chiếc thường (hoặc váy) bên trong, để lộ hai lớp váy. Trong khi đó, ở Trung Quốc (cũng như Nhật Bản và Triều Tiên), chiếc thường bên ngoài dài đến sát đất, che kín chiếc thường (hoặc váy) bên trong.
+                </p>
+                </a><button onclick="switchPage('giaolinh')" class="flip">Trang sau</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-info">
+        <div class="inner_container">
+            <div class="product-image">
+                <img src="img/product/vienlinhnam2.jpg" alt="Áo Viên Lĩnh">
+            </div>
+            <div class="product-details page" id="vienlinh">
+                <h1>Áo Viên Lĩnh</h1>
+                <p class="description">
+                Cũng như giao lĩnh, áo viên lĩnh cũng có những biến thể, chủ yếu là ở hình dạng tay áo rộng hay chẽn. Loại áo này cũng phối hợp với thường, phủ ra ngoài hoặc mặc bên trong tùy ý của người mặc. Vào thời Lê, Nguyễn áo viên lĩnh là kiểu áo chính thức nhất của tầng lớp quan viên và triều đình.
+                Vào thời Lý, áo viên lĩnh thường có bốn vạt ở trước như trong lời tả của Chu Khứ Phi thời Tống,”Những người còn lại, ngày thường trên thì vận áo Sam đen cổ tròn bó sát, bốn vạt như áo Bối Tử, gọi là áo Tứ Điên; dưới thì vận thường đen.” (trích Ngàn Năm Áo Mũ). Loại viên lĩnh bốn vạt này có thể còn tồn tại đến thời Lê.
+                </p>
+                <h1>Viên lĩnh vạt dài</h1>
+                <p class="description">Viên lĩnh vạt dài thường được mặc phủ bên ngoài thường.</p>
+ 
+                <h1>Viên lĩnh vạt ngắn</h1>
+                <p class="description">
+                Viên lĩnh vạt ngắn thường có thường quây bên ngoài, và thường dùng cho phụ nữ.
+                </p>
+            </div>
+        </div>    
+    </section>
+
+    <section class="product-info">
+        <div class="inner_container">
+            <div class="product-image">
+                <img src="img/product/doikhamnu.jpg" alt="Áo Đối Khâm">
+            </div>
+            <div class="product-details page" id="doikham">
+                <h1>Áo Đối Khâm</h1>
+                <p class="description">
+                Đối khâm là vạt áo đối nhau (có thể gọi là Trực lĩnh), là một loại áo mà vạt áo mở song song trước ngực người mặc. Loại áo này là một dạng áo khoác mặc thêm ngoài cùng, tương đối dùng được cho nam giới lẫn nữ giới.
+                Đối Khâm (對襟) Chữ Khâm (襟) có nghĩa là vạt áo trước. Áo nhật bình vào thời Nguyễn hay áo tứ thân cũng là một dạng của áo đối khâm. Mỗi thời đại, kiểu dáng sẽ thay đổi đôi chút. Không như giao lĩnh và viên lĩnh (có 6 thân), hay thụ lĩnh triều Nguyễn (có 5 thân – còn được gọi là ngũ thân), đối khâm chỉ có 4 thân nên dân gian còn gọi là tứ thân.
+                </p>
+
+                <h1>Áo Nhật Bình</h1>
+                <p class="description">
+                Nhật bình thuộc dạng thức áo đối khâm khoác bên ngoài áo dài tay chẽn hoặc áo tấc, được cài khuy chính giữa. Ngoài ra, nút áo tròn bằng ngọc điêu khắc tinh xảo dùng để trang trí chính là điểm đặc trưng của nhật bình so với áo đối khâm phi phong nhà Minh.
+                Nguồn gốc Áo Nhật Bình được nhà Nguyễn phát triển lên, là dạng áo Đối Khâm có cổ hình chữ nhật to bản, dùng dây buộc 2 vạt áo. Do hoa văn ở cổ áo khi ghép lại tạo thành một hình chữ nhật ngay trước ngực người mặc, nên áo này gọi là áo Nhật Bình. Khắp thân áo trang trí theo thể thức hoa văn chính là dạng hình tròn khép kín, rải rác khắp áo đan xen với các hình phượng múa, hoa lá đính thêm các hạt tuyến lấp lánh. Ở tay áo đặc biệt có dải màu ngũ hành; lục, vàng, xanh, trắng, đỏ. Tuy nhiên quy chế tay dãy màu này lại không áp dụng trên loại áo Nhật Bình của bậc Hậu.
+                </p>
+                </a><button onclick="switchPage('doikham2')" class="flip">Trang tiếp</button>
+            </div>
+
+            <div class="product-details page" id="doikham2">
+                <h1>Áo tứ thân</h1>
+                <p class="description">
+                Theo các nhà nghiên cứu lịch sử, áo tứ thân là sự tiến hóa từ áo đối khâm. Trong thế kỷ 20, trang phục của phụ nữ cần phải đơn giản để phù hợp với công việc nông nghiệp. Do đó, áo đối khâm đã được cải tiến để trở thành áo tứ thân như chúng ta biết ngày nay.
+                Mặc dù vậy, áo tứ thân vẫn giữ được thiết kế cổ áo đặc trưng. Khi mặc, người phụ nữ sẽ buộc hai tà áo phía trước lại với nhau để tạo nên vẻ ngoài gọn gàng, thuận tiện cho việc làm việc.
+                </p>
+                </a><button onclick="switchPage('doikham')" class="flip">Trang sau</button>
+            </div>
+    <script>
+    function showProductInfo(pageId) {
+        const categorySection = document.querySelector('.Category');
+        categorySection.style.display = 'none';  
+
+        const productInfos = document.querySelectorAll('.product-info');
+        productInfos.forEach(info => info.style.display = 'none');
+
+        const currentProductInfo = document.querySelector(`.product-info [id="${pageId}"]`);
+        if (currentProductInfo) {
+            currentProductInfo.closest('.product-info').style.display = 'block';
+        }
+
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
+
+        document.getElementById(pageId).classList.add('active');
+
+        history.pushState({ pageId }, '', `#${pageId}`);
+    }
+
+    window.addEventListener('popstate', (event) => {
+    if (event.state) {
+      
+        showProductInfo(event.state.pageId);
+    } else {
+ 
+        const categorySection = document.querySelector('.Category');
+        categorySection.style.display = 'block';  
+
+        const productInfo = document.querySelector('.product-info');
+        productInfo.style.display = 'none'; 
+    }
+});
+
+
+    function switchPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+ 
 </body>
 </html>
