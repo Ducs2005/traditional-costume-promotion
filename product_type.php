@@ -187,26 +187,23 @@ Tuy nhiên giao lĩnh vạt ngắn quây thường triều Lê có thể phân b
     }
 
     window.addEventListener('popstate', (event) => {
-    if (event.state) {
-      
-        showProductInfo(event.state.pageId);
-    } else {
- 
-        const categorySection = document.querySelector('.Category');
-        categorySection.style.display = 'block';  
-
-        const productInfo = document.querySelector('.product-info');
-        productInfo.style.display = 'none'; 
-    }
-});
-
+        if (event.state) {
+            showProductInfo(event.state.pageId);
+        } else {
+            const categorySection = document.querySelector('.Category');
+            categorySection.style.display = 'block';  
+            
+            const productInfos = document.querySelectorAll('.product-info');
+            productInfos.forEach(info => info.style.display = 'none'); 
+        }
+    });
 
     function switchPage(pageId) {
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
 
-            document.getElementById(pageId).classList.add('active');
-        }
+        document.getElementById(pageId).classList.add('active');
+    }
     </script>
  
 </body>
