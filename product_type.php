@@ -25,19 +25,19 @@
                 <div class="product-card">
                     <img src="img//product/vienlinhnam.jpg" alt="Sản phẩm 2">
                     <h2>Áo viên lĩnh</h2>
-                    <p>Áo viên lĩnh còn gọi là áo cổ tròn, cổ kiềng… gài cúc bên vai phải. Dạng áo này tương tự như giao lĩnh, nhưng áo là dạng cổ tròn thay vì cổ giao nhau, cũng có dạng vạt ngắn và vạt dài. Vào thời Lê, Nguyễn áo viên lĩnh là kiểu áo chính thức nhất của tầng lớp quan viên và triều đình.</p>
+                    <p>Áo viên lĩnh còn gọi là áo cổ tròn, cổ kiềng… gài cúc bên vai phải. Dạng áo này tương tự như giao lĩnh, nhưng áo là dạng cổ tròn thay vì cổ giao nhau, cũng có dạng vạt ngắn và vạt dài. Vào thời Lê, Nguyễn áo viên lĩnh là kiểu áo chính thức nhất của tầng lớp quan viên, triều đình và cả vua chúa.</p>
                     <a href="vienlinh.php" class="btn">Xem Chi Tiết</a>
                 </div>
                 <div class="product-card">
                     <img src="img//product/doikhamnu.jpg" alt="Sản phẩm 3">
                     <h2>Áo đối khâm</h2>
-                    <p>Đối khâm tức vạt áo đối nhau, đối khâm là dạng áo có hai vạt trước đặt song song nhau, thường để buông thõng, khoác bên ngoài, nhìn được rõ lớp áo bên trong. Loại áo này thường xẻ tà 2 bên, độ dài chưa chạm đến chân váy. Từ thời Lý – Trần nước ta đã chuộng lại áo này.</p>
+                    <p>Đối khâm tức vạt áo đối nhau, đối khâm là dạng áo có hai vạt trước đặt song song nhau, thường để buông thõng, khoác bên ngoài, nhìn được rõ lớp áo bên trong. Loại áo này thường xẻ tà 2 bên, độ dài chưa chạm đến chân váy. Từ thời Lý – Trần nước ta đã chuộng lại áo này và sau này còn có thêm nhiều biến thể.</p>
                     <a href="doikham.php" class="btn">Xem Chi Tiết</a>
                 </div>
                 <div class="product-card">
                     <img src="img//product/caothuc.jpg" alt="Sản phẩm 4">
                     <h2>Tiện phục, cao thúc</h2>
-                    <p>Các hậu phi có tiện phục quen thuộc là phối nội y (áo yếm), choàng thêm áo đối khâm. Khi nội y phụ nữ chỉ là dạng quấn quanh ngực, kết hợp với thường kéo cao và đối khâm, sẽ tạo nên một kiểu trang phục khá giống trang phục của phụ nữ thời Đường, gọi là “cao thúc”.</p>
+                    <p>Các hậu phi có tiện phục quen thuộc là phối nội y (áo yếm), choàng thêm áo đối khâm. Khi nội y phụ nữ chỉ là dạng quấn quanh ngực, kết hợp với thường kéo cao và đối khâm, sẽ tạo nên một kiểu trang phục khá giống trang phục của phụ nữ thời Đường. Dạng trang phục này được gọi là “cao thúc”.</p>
                     <a href="product4-details.html" class="btn">Xem Chi Tiết</a>
                 </div>
                 <div class="product-card">
@@ -55,7 +55,7 @@
                 <div class="product-card">
                     <img src="img//product/nhatbinhhoanghau.jpg" alt="Sản phẩm 7">
                     <h2>Áo nhật bình</h2>
-                    <p>Áo Nhật bình vốn là loại triều phục dành cho bậc hậu, phi, cung tần và công chúa thời Nguyễn, sau đấy trở thành loại trang phục phổ biến của phụ nữ quý tộc và cả thường dân trong dịp hôn lễ và ngày càng được các bạn nữ trẻ Việt Nam yêu thích sử dụng khi đi ngoạn cảnh.</p>
+                    <p>Áo Nhật bình là triều phục dành cho bậc hậu, phi, cung tần và công chúa thời Nguyễn, sau này là hỷ phục của phụ nữ quý tộc. Là dạng áo đối khâm khoác bên ngoài áo ngũ thân, cài khuy giữa, nút áo tròn bằng ngọc điêu khắc tinh xảo. Hai vạt buộc dây, phần cổ mặc vào ghép thành hình chữ nhật nên gọi là nhật bình.</p>
                     <a href="product4-details.html" class="btn">Xem Chi Tiết</a>
                 </div>
                 <div class="product-card">
